@@ -97,7 +97,7 @@ void DestoryLQueue(LQueue *Q)
 		pp = p;
 		p = p->next;
 		free(pp);
-	}while(p != NULL);
+	}while(p != NULL); 
 }
 
 /**
@@ -215,14 +215,14 @@ void ClearLQueue(LQueue *Q)
 	}
 	Node *p, *q;
 	Q->rear = Q->front;
-	p = Q->front->next; 
+/*	p = Q->front->next; 
 	while (p != NULL) 
 	{
 		q = p;
 		p = p->next;
 		free(q);
 	}
-	free(p);
+	free(p);*/
 	return;
 } 
 
